@@ -1,0 +1,15 @@
+mini-automation-service/
+├─ app/
+│ ├─ __init__.py
+│ ├─ main.py
+│ ├─ config.py
+│ ├─ routes.py
+│ ├─ tasks.py
+│ └─ utils.py
+├─ requirements.txt
+├─ Dockerfile
+├─ docker-compose.yml
+├─ .github/
+│ └─ workflows/ci.yml
+├─ README.md
+└─ .env.example
