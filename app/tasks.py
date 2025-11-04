@@ -9,12 +9,10 @@ scheduler = APScheduler()
 
 
 def scheduled_job():
-# Bu görev düzenli aralıklarla çalışır; burada sadece log atılıyor.
-current_app.logger.info("Scheduled job çalıştı - zaman: %s", time.strftime("%Y-%m-%d %H:%M:%S"))
-
+    current_app.logger.info("Scheduled job çalıştı - zaman: %s", time.strftime("%Y-%m-%d %H:%M:%S"))
 
 
 
 def init_scheduler(app):
-scheduler.init_app(app)
-scheduler.start()
+    scheduler.init_app(app)
+    scheduler.start()
